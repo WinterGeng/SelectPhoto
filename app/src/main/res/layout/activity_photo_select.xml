@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".PhotoSelectActivity">
+    android:layout_marginTop="100dp"
+    android:padding="10dp"
+    tools:context=".activity.PhotoSelectActivity">
 
     <com.flyco.tablayout.SlidingTabLayout
         android:id="@+id/tab"
@@ -18,8 +19,17 @@
         app:tl_textUnselectColor="@android:color/darker_gray"
         app:tl_textsize="20sp" />
 
+    <ImageView
+        android:id="@+id/select_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"/>
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab" />
+</RelativeLayout>

@@ -1,10 +1,12 @@
-package com.geng.selectphoto;
+package com.geng.selectphoto.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.geng.selectphoto.R;
 
 public class MainActivity extends AppCompatActivity {
 

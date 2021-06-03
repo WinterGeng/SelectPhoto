@@ -1,4 +1,4 @@
-package com.geng.selectphoto;
+package com.geng.selectphoto.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
